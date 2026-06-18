@@ -9,7 +9,7 @@ const translations: Record<Lang, Translations> = {
       github: 'Proyectos GitHub',
       webExp: 'Experiencia Web y Apps',
       contacto: 'Contacto',
-      langBtn: 'EN',
+      langBtn: 'ES',
     },
     perfil: {
       name: 'Julian D Silva',
@@ -92,7 +92,7 @@ const translations: Record<Lang, Translations> = {
       github: 'GitHub Projects',
       webExp: 'Web & App Experience',
       contacto: 'Contact',
-      langBtn: 'ES',
+      langBtn: 'EN',
     },
     perfil: {
       name: 'Julian D Silva',
