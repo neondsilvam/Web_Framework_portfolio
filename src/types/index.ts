@@ -83,7 +83,8 @@ export interface Translations {
       phoneCad: string
       location: string
       linkedin: string
-      github: string
+      MainGithub: string
+      SecondaryGithub: string
     }
   }
 }

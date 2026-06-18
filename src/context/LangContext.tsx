@@ -21,9 +21,7 @@ const translations: Record<Lang, Translations> = {
     github: {
       sections: [
         { id: '2025', label: '2025' },
-        { id: '2024', label: '2024' },
-        { id: '2023', label: '2023' },
-        { id: '2022', label: '2022' },
+        { id: '2026', label: '2026' },
       ],
       aclaration: 'Estos han sido mis mejores proyectos de GitHub.',
       projects: [
@@ -50,9 +48,7 @@ const translations: Record<Lang, Translations> = {
     webExp: {
       sections: [
         { id: '2025', label: '2025' },
-        { id: '2024', label: '2024' },
-        { id: '2023', label: '2023' },
-        { id: '2022', label: '2022' },
+        { id: '2026', label: '2026' },
       ],
       aclaration: 'Experiencia en páginas web y aplicaciones.',
       projects: [
@@ -81,7 +77,8 @@ const translations: Record<Lang, Translations> = {
         phoneCad: 'Teléfono',
         location: 'Ubicación',
         linkedin: 'LinkedIn',
-        github: 'GitHub',
+        MainGithub: 'Main GitHub Link (Projectos principales)',
+        SecondaryGithub: 'Secondary Github Link (Experimentos y exploracion)'
       },
     },
   },
@@ -104,9 +101,7 @@ const translations: Record<Lang, Translations> = {
     github: {
       sections: [
             { id: '2025', label: '2025' },
-            { id: '2024', label: '2024' },
-            { id: '2023', label: '2023' },
-            { id: '2022', label: '2022' },
+            { id: '2026', label: '2026' },
         ],
         aclaration: 'These are my best GitHub projects.',
         projects: [
@@ -132,10 +127,8 @@ const translations: Record<Lang, Translations> = {
     },
     webExp: {
       sections: [
+            { id: '2026', label: '2026' },
             { id: '2025', label: '2025' },
-            { id: '2024', label: '2024' },
-            { id: '2023', label: '2023' },
-            { id: '2022', label: '2022' },
         ],
         aclaration: 'Experience in web pages and applications.',
         projects: [
@@ -164,7 +157,8 @@ const translations: Record<Lang, Translations> = {
         phoneCad: 'Phone',
         location: 'Location',
         linkedin: 'LinkedIn',
-        github: 'GitHub',
+        MainGithub: 'Main GitHub Link (Main projects)',
+        SecondaryGithub: 'Secondary Github Link (Self learn and exploration)'
       },
     },
   },

@@ -11,8 +11,8 @@ export function Contacto() {
         {label: labels.phoneCol, value: contactInfo.phoneCol, href: `tel:${contactInfo.phoneCol}`},
         {label: labels.phoneCol, value: contactInfo.phoneCad, href: `tel:${contactInfo.phoneCad}`},
         {label: labels.linkedin, value: contactInfo.linkedin, href: `https://${contactInfo.linkedin}`},
-        {label: labels.github, value: contactInfo.MainGithub, href: `https://github.com/${contactInfo.MainGithub}`},
-        {label: labels.github, value: contactInfo.SecondaryGithub, href: `https://github.com/${contactInfo.MainGithub}`
+        {label: labels.MainGithub, value: contactInfo.MainGithub, href: `https://github.com/${contactInfo.MainGithub}`},
+        {label: labels.SecondaryGithub, value: contactInfo.SecondaryGithub, href: `https://github.com/${contactInfo.MainGithub}`
         },
     ]
 
