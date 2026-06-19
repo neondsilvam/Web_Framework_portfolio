@@ -16,9 +16,9 @@ function AppContent() {
     switch (currentPage) {
       case 'perfil':
         return <Perfil />
-      case 'github':
+      case 'web':
         return <GithubProjects />
-      case 'webExp':
+      case 'mobile':
         return <WebExp />
       case 'contacto':
         return <Contacto />

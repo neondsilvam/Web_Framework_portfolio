@@ -1,6 +1,6 @@
 export type Lang = 'es' | 'en'
 
-export type Page = 'perfil' | 'github' | 'webExp' | 'contacto'
+export type Page = 'perfil' | 'web' | 'mobile' | 'contacto'
 
 export interface Project {
   id: string
@@ -48,8 +48,8 @@ export interface Translations {
   nav: {
     logo: string
     perfil: string
-    github: string
-    webExp: string
+    web: string
+    mobile: string
     contacto: string
     langBtn: string
   }
