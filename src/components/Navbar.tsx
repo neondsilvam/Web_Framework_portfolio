@@ -12,8 +12,8 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
   const pages: { key: Page; label: string }[] = [
     { key: 'perfil', label: t.nav.perfil },
-    { key: 'github', label: t.nav.github },
-    { key: 'webExp', label: t.nav.webExp },
+    { key: 'web', label: t.nav.web },
+    { key: 'mobile', label: t.nav.mobile },
     { key: 'contacto', label: t.nav.contacto },
   ]
 

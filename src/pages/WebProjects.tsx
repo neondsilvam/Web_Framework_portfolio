@@ -1,21 +1,21 @@
 import {useState, useEffect} from 'react'
 import {useLang} from '../context/LangContext'
 import type {Project} from '../types'
-import {AnimationProjects, AnimationProjectsEn} from '../data/projects'
+import {WebProjectsES, WebProjectsEN} from '../data/projects'
 import styles from './Proyectos.module.css'
 
-export function WebExp() {
+export function WebProjects() {
     const {t, lang} = useLang()
 
     const [projects, setProjects] = useState<Project[]>(
-        lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        lang === 'en' ? WebProjectsEN : WebProjectsES
     )
     const [selectedId, setSelectedId] = useState<string>(
-        lang === 'en' ? AnimationProjectsEn[0].id : AnimationProjects[0].id
+        lang === 'en' ? WebProjectsEN[0].id : WebProjectsES[0].id
     )
 
     useEffect(() => {
-        const nextProjects = lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        const nextProjects = lang === 'en' ? WebProjectsEN : WebProjectsES
         setProjects(nextProjects)
         setSelectedId(nextProjects[0].id)
     }, [lang])
@@ -36,7 +36,7 @@ export function WebExp() {
         <section className={styles.section}>
             <div className={styles.layout}>
                 <aside className={styles.sidebar}>
-                    {t.webExp.sections.map((sec) => {
+                    {t.github.sections.map((sec) => {
                         const sectionProjects = projects.filter((p) => p.section === sec.id)
                         return (
                             <div key={sec.id} className={styles.sectionGroup}>
@@ -53,7 +53,7 @@ export function WebExp() {
                             </div>
                         )
                     })}
-                    <h5 className={styles.sectionSubTitle}>{t.webExp.aclaration}</h5>
+                    <h5 className={styles.sectionSubTitle}>{t.github.aclaration}</h5>
                 </aside>
 
                 <div className={styles.detail}>
@@ -76,7 +76,7 @@ export function WebExp() {
                         )}
                     </div>
                     <button className={styles.processButton}
-                            onClick={handleDesc}>{selected.isShowingTheProcess ? t.webExp.showingProcessButtonTextTrue : t.webExp.showingProcessButtonTextFalse}</button>
+                            onClick={handleDesc}>{selected.isShowingTheProcess ? t.github.showingProcessButtonTextTrue : t.github.showingProcessButtonTextFalse}</button>
                     {selected.isShowingTheProcess ? (
                         <div className={styles.processArea}>
                             <div className={styles.processFrame}>

@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { LangProvider } from './context/LangContext'
 import { Navbar } from './components/Navbar'
 import { Perfil } from './pages/Perfil'
-import { GithubProjects } from './pages/GithubProjects'
-import { WebExp } from './pages/WebExp'
+import { WebProjects } from './pages/WebProjects'
+import { MobileProjects } from './pages/MobileProjects'
 import { Contacto } from './pages/Contacto'
 import type {Page} from './types'
 import { Footer } from './components/Footer'
@@ -17,9 +17,9 @@ function AppContent() {
       case 'perfil':
         return <Perfil />
       case 'web':
-        return <GithubProjects />
+        return <WebProjects />
       case 'mobile':
-        return <WebExp />
+        return <MobileProjects />
       case 'contacto':
         return <Contacto />
     }

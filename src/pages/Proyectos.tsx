@@ -1,21 +1,21 @@
 import {useState, useEffect} from 'react'
 import {useLang} from '../context/LangContext'
 import type {Project} from '../types'
-import {AnimationProjects, AnimationProjectsEn} from '../data/projects'
+import {WebProjectsES, WebProjectsEN} from '../data/projects'
 import styles from './Proyectos.module.css'
 
 export function Proyectos() {
     const {t, lang} = useLang()
 
     const [projects, setProjects] = useState<Project[]>(
-        lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        lang === 'en' ? WebProjectsEN : WebProjectsES
     )
     const [selectedId, setSelectedId] = useState<string>(
-        lang === 'en' ? AnimationProjectsEn[0].id : AnimationProjects[0].id
+        lang === 'en' ? WebProjectsEN[0].id : WebProjectsES[0].id
     )
 
     useEffect(() => {
-        const nextProjects = lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        const nextProjects = lang === 'en' ? WebProjectsEN : WebProjectsES
         setProjects(nextProjects)
         setSelectedId(nextProjects[0].id)
     }, [lang])

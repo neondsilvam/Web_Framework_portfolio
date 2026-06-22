@@ -1,21 +1,21 @@
 import {useState, useEffect} from 'react'
 import {useLang} from '../context/LangContext'
 import type {Project} from '../types'
-import {AnimationProjects, AnimationProjectsEn} from '../data/projects'
+import {MobileProjectsEN, MobileProjectsES} from '../data/projects'
 import styles from './Proyectos.module.css'
 
-export function GithubProjects() {
+export function MobileProjects() {
     const {t, lang} = useLang()
 
     const [projects, setProjects] = useState<Project[]>(
-        lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        lang === 'en' ? MobileProjectsEN : MobileProjectsES
     )
     const [selectedId, setSelectedId] = useState<string>(
-        lang === 'en' ? AnimationProjectsEn[0].id : AnimationProjects[0].id
+        lang === 'en' ? MobileProjectsEN[0].id : MobileProjectsES[0].id
     )
 
     useEffect(() => {
-        const nextProjects = lang === 'en' ? AnimationProjectsEn : AnimationProjects
+        const nextProjects = lang === 'en' ? MobileProjectsEN : MobileProjectsES
         setProjects(nextProjects)
         setSelectedId(nextProjects[0].id)
     }, [lang])
@@ -36,7 +36,7 @@ export function GithubProjects() {
         <section className={styles.section}>
             <div className={styles.layout}>
                 <aside className={styles.sidebar}>
-                    {t.github.sections.map((sec) => {
+                    {t.webExp.sections.map((sec) => {
                         const sectionProjects = projects.filter((p) => p.section === sec.id)
                         return (
                             <div key={sec.id} className={styles.sectionGroup}>
@@ -53,7 +53,7 @@ export function GithubProjects() {
                             </div>
                         )
                     })}
-                    <h5 className={styles.sectionSubTitle}>{t.github.aclaration}</h5>
+                    <h5 className={styles.sectionSubTitle}>{t.webExp.aclaration}</h5>
                 </aside>
 
                 <div className={styles.detail}>
@@ -76,7 +76,7 @@ export function GithubProjects() {
                         )}
                     </div>
                     <button className={styles.processButton}
-                            onClick={handleDesc}>{selected.isShowingTheProcess ? t.github.showingProcessButtonTextTrue : t.github.showingProcessButtonTextFalse}</button>
+                            onClick={handleDesc}>{selected.isShowingTheProcess ? t.webExp.showingProcessButtonTextTrue : t.webExp.showingProcessButtonTextFalse}</button>
                     {selected.isShowingTheProcess ? (
                         <div className={styles.processArea}>
                             <div className={styles.processFrame}>

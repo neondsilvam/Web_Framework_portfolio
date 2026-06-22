@@ -6,7 +6,9 @@ export interface Project {
   id: string
   title: string
   description: string
+  isProjectDeployed: boolean
   iframeSrc: string
+  imageSrc: string
   section: string
   hasExternalLinks: boolean
   externalLinks: string
