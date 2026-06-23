@@ -27,7 +27,7 @@ const translations: Record<Lang, Translations> = {
         { id: '2025', label: '2025' },
         { id: '2026', label: '2026' },
       ],
-      aclaration: 'Estos han sido mis mejores proyectos usando React (Incluyendo esta pagina)',
+      aclaration: 'Estos han sido mis mejores proyectos usando React (Incluyendo esta página)',
       projects: [
       ],
       showingProcessButtonTextFalse: "Mostrar proceso",
@@ -38,7 +38,7 @@ const translations: Record<Lang, Translations> = {
         { id: '2025', label: '2025' },
         { id: '2026', label: '2026' },
       ],
-      aclaration: 'Estos son mis proyectos para desarrollo movil.',
+      aclaration: 'Estos son mis proyectos para desarrollo móvil.',
       projects: [
       ],
       showingProcessButtonTextFalse: "Mostrar proceso",
@@ -64,7 +64,7 @@ const translations: Record<Lang, Translations> = {
     nav: {
       logo: 'Julian D Silva',
       perfil: 'Home',
-      web: 'Web Frameworks Projects',
+      web: 'Web Framework Projects',
       mobile: 'Mobile & App Experience',
       contacto: 'Contact',
       langBtn: 'EN',
@@ -85,7 +85,7 @@ const translations: Record<Lang, Translations> = {
             { id: '2025', label: '2025' },
             { id: '2026', label: '2026' },
         ],
-        aclaration: 'These are my best Web projects.',
+        aclaration: 'These are my best Web projects. (Including this web page.)',
         projects: [
         ],
     showingProcessButtonTextFalse: "Show Process",
@@ -105,7 +105,7 @@ const translations: Record<Lang, Translations> = {
     contacto: {
       title: 'Contact info',
       subtitle1:
-        "Insightful ideas deserve become a reality. If you have a project in mind or simply have the impulse to make something different, this is your moment.",
+        "Insightful ideas deserve to become a reality. If you have a project in mind or simply have the impulse to make something different, this is your moment.",
       subtitle2: " \n\n Don't scrap those ideas. Send me a message and let's develop your idea's full potential!",
       labels: {
         email: 'Email',

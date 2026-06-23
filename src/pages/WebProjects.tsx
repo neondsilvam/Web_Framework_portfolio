@@ -64,15 +64,16 @@ export function WebProjects() {
                             <a href={selected.externalLinks} target="_blank">{selected.externalLinks}</a>) : (<></>)}
                     </div>
                     <div className={styles.iframeWrapper}>
-                        {selected.iframeSrc ? (
+                        {selected.isProjectDeployed ? (
                             <iframe
                                 src={selected.iframeSrc}
                                 title={selected.title}
                                 className={styles.iframe}
                                 allowFullScreen
+                                allow="camera; microphone"
                             />
                         ) : (
-                            <p className={styles.iframePlaceholder}></p>
+                            <img className={styles.iframe} src={selected.imageSrc}></img>
                         )}
                     </div>
                     <button className={styles.processButton}
