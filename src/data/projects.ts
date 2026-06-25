@@ -370,7 +370,7 @@ export const MobileProjectsES: Project[] = [
                     title: "Proceso de creacion y diseno",
                     description: [
                         'El concepto inicial comenzo con el concepto de crear un juego que motivara a la gente a reducir la nomofobia, tambien conocido como el miedo a estar desconectado del mundo electrico.',
-                        ''
+                        'Bajo'
                     ],
                     media: [PreDes1, PreDes2, PreDes3],
                 },
