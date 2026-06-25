@@ -22,6 +22,26 @@ import ProVilla2 from '../assets/Villarica/process2.png'
 import PostVilla1 from '../assets/Villarica/postprocess1.png'
 import PostVilla2 from '../assets/Villarica/postprocess2.png'
 
+//(Des)conectado
+import PreDes1 from '../assets/(Des)conectado/predes1.png'
+import PreDes2 from '../assets/(Des)conectado/predes2.png'
+import PreDes3 from '../assets/(Des)conectado/predes3.png'
+import ProDes1 from '../assets/(Des)conectado/prodes1.png'
+import ProDes2 from '../assets/(Des)conectado/prodes2.png'
+import ProDes3 from '../assets/(Des)conectado/prodes3.png'
+import PostDes1 from '../assets/(Des)conectado/postdes1.png'
+import PostDes2 from '../assets/(Des)conectado/postdes2.png'
+import DesConectado from '../assets/(Des)conectado/(des)conectado.jpg'
+
+//TaskManagerApp
+import preTaskManager from '../assets/TaskManagerApp/preprocess.png'
+import proTaskManager from '../assets/TaskManagerApp/process.png'
+import postTaskManager from '../assets/TaskManagerApp/postprocess.png'
+
+//CocktailApp
+import preCocktail from '../assets/CocktailApp/preprocess.png'
+import proCocktail from '../assets/CocktailApp/process.png'
+import postCocktail from '../assets/CocktailApp/postprocess.png'
 
 export const WebProjectsES: Project[] = [
     {
@@ -332,29 +352,30 @@ export const WebProjectsEN: Project[] = [
 export const MobileProjectsES: Project[] = [
     {
         id: 'p1',
-        title: 'Proyecto base - Portafolio web',
+        title: '(Des)Conectado - Un juego fuera del dispositivo',
         description:
-            'Este proyecto fue desarrollado en 2026, tras múltiples versiones previas construidas con diferentes herramientas. Este portafolio fue creado usando React y alojado en GitHub Pages. Refleja mi evolución como programador, así como mi nivel de organización y crecimiento a lo largo de los años.',
+            'Este fue un projecto desarrollado en colaboracion con la universidad de los andes.' +
+            'Este presenta el DEMO de una novela grafica interactiva para dispositivos moviles ANDROID acerca de Ashley, una joven nomofobica, la cual se pierde en un bosque meintras su familia va de campament, y ahora tiene que volver.' +
+            'Este projecto refleja mi primer acercamiento profesional a unity y mi inicio en el area de programacion formalmente, ya que antes solo habia hecho ejercicios menores.',
         isProjectDeployed: false,
         iframeSrc: '',
-        imageSrc: IMGPort,
-        section: '2026',
-        hasExternalLinks: true,
-        externalLinks: "https://github.com/neondsilvam/Web_Framework_portfolio",
+        imageSrc: DesConectado,
+        section: '2025',
+        hasExternalLinks: false,
+        externalLinks: '',
         isShowingTheProcess: false,
         process: {
             sections: {
                 preproduction: {
-                    title: "Idea Base",
+                    title: "Proceso de creacion y diseno",
                     description: [
-                        "Mi portafolio digital ha pasado por diversas herramientas y procesos: desde crearlo con plataformas existentes como Adobe Express, hasta programarlo con HTML y CSS vainilla en servidores como Glitch.",
-                        "Sin embargo, una vez comprendí cómo desarrollarme como programador frontend y comencé a avanzar con React, logré formalizar un proyecto más sólido.",
-                        "Este portafolio no solo sirve como base para mostrar mis otros proyectos, sino también para demostrar mi potencial de aprendizaje y crecimiento personal."
+                        'El concepto inicial comenzo con el concepto de crear un juego que motivara a la gente a reducir la nomofobia, tambien conocido como el miedo a estar desconectado del mundo electrico.',
+                        ''
                     ],
-                    media: [PrePort2, PrePort1],
+                    media: [PreDes1, PreDes2, PreDes3],
                 },
                 production: {
-                    title: "El desarrollo actual",
+                    title: "Producir La App",
                     description: [
                         'El concepto inicial fue generar la estructura de las páginas navegables, luego el sistema de idiomas y finalmente el contenido en sí.',
                         'Era necesario que toda la información estuviera disponible en ambos idiomas, dado que algunos proyectos contaban únicamente con uno de los dos.',
@@ -363,25 +384,25 @@ export const MobileProjectsES: Project[] = [
                         'Todo esto también dividido por módulo y por proyecto.',
                         'Aclaración: soy consciente de que estos datos deberían estar en un archivo .env, pero en este caso particular no representa un riesgo de seguridad significativo.'
                     ],
-                    media: [ProPort],
+                    media: [ProDes1, ProDes2, ProDes3],
                 },
                 postproduction: {
-                    title: "Pulir detalles",
+                    title: "Playtest y Corregir",
                     description: [
                         "En la etapa final, el enfoque estuvo en organizar el contenido, realizar pruebas y verificar que todo estuviera en su lugar.",
                         "Durante esta fase se agregaron sonidos, se refinaron detalles visuales y se aseguró la coherencia general del proyecto.",
                         "Todo con el objetivo de concluir el proyecto de la mejor manera posible.",
                         "Cabe mencionar que este no es el fin del proyecto, ya que continuará evolucionando conforme mejoren mis habilidades."
                     ],
-                    media: [PostPort],
+                    media: [PostDes1, PostDes2],
                 },
             },
-            sectionFooter: "Todo el contenido web y visual es de creación propia, salvo que se indique lo contrario.",
+            sectionFooter: "Agradecimientos especiales a la universidad de los Andes por la colaboracion.",
         }
     },
     {
         id: 'p2',
-        title: 'Proyecto web - Plataforma de juego',
+        title: 'Lista de Tareas',
         description:
             'Esta página web, desarrollada en 2026 como proyecto de clase, fue construida con React como base. ' +
             'Se conecta directamente con una base de datos mediante el servicio Google Firebase, el cual almacena los datos de las partidas y los registra en la tabla de posiciones. ' +
@@ -403,7 +424,7 @@ export const MobileProjectsES: Project[] = [
                         'El concepto inicial era simplemente lograr que la página web se conectara con el juego entregado previamente.',
                         'Dentro de este proceso, el objetivo no era solo entender la funcionalidad básica, sino también desarrollar el pensamiento lógico necesario para comprender cómo debían funcionar los sistemas internos.'
                     ],
-                    media: [PreWeb],
+                    media: [preTaskManager],
                 },
                 production: {
                     title: "La producción en sí",
@@ -413,7 +434,7 @@ export const MobileProjectsES: Project[] = [
                         'Luego, la plataforma web construida en React con TypeScript, conectada a Firebase desde el backend.',
                         'Finalmente, se desarrolló el módulo de integración entre ambos entornos, permitiendo un flujo de datos continuo y consistente.'
                     ],
-                    media: [ProWeb],
+                    media: [proTaskManager],
                 },
                 postproduction: {
                     title: "Telemetría",
@@ -422,7 +443,7 @@ export const MobileProjectsES: Project[] = [
                         'Esto incluyó las opciones de administrador, reguladas desde Firebase y accesibles únicamente con las credenciales correspondientes (más información en GitHub).',
                         'Este sistema utiliza los datos recolectados para mostrar estadísticas personalizadas del jugador, presentadas como un panel de análisis de datos configurable.'
                     ],
-                    media: [PostWeb],
+                    media: [postTaskManager],
                 },
             },
             sectionFooter: "",
@@ -430,7 +451,7 @@ export const MobileProjectsES: Project[] = [
     },
     {
         id: 'p3',
-        title: 'Villarica - P5.js',
+        title: 'Cocktail App - Learning to prepare',
         description:
             'Este proyecto fue desarrollado para el semillero de investigación "SENDA" de la Universidad de los Andes, Colombia. ' +
             'Su propósito principal fue construir un relato periodístico expresado a través de una propuesta de código narrativo. ' +
@@ -456,7 +477,7 @@ export const MobileProjectsES: Project[] = [
                         'La intención era contar su historia con el mayor respeto posible, al mismo tiempo que transmitir el dolor que vivió.',
                         'Durante esta etapa también fue necesario investigar el aspecto técnico: comprender el funcionamiento de la librería P5.js y obtener los recursos necesarios para el proyecto.'
                     ],
-                    media: [PreVilla1, PreVilla4, PreVilla2, PreVilla3],
+                    media: [preCocktail],
                 },
                 production: {
                     title: "Creando la pieza",
@@ -466,7 +487,7 @@ export const MobileProjectsES: Project[] = [
                         'Todo controlado mediante captura de movimiento, que analiza el video en tiempo real e identifica las manos a partir de una serie de puntos de referencia específicos.',
                         'La única excepción es el botón de inicio, controlado por el mouse como medida de seguridad para evitar activaciones prematuras.'
                     ],
-                    media: [ProVilla1, ProVilla2],
+                    media: [proCocktail],
                 },
                 postproduction: {
                     title: "Presentación",
@@ -474,7 +495,7 @@ export const MobileProjectsES: Project[] = [
                         'Para presentar la propuesta creativa, se desarrolló un concepto de presentación sólido y coherente.',
                         'El objetivo era demostrar un ciclo narrativo completo: el inicio, el conflicto y el desenlace.'
                     ],
-                    media: [PostVilla1, PostVilla2],
+                    media: [postCocktail],
                 },
             },
             sectionFooter: "",

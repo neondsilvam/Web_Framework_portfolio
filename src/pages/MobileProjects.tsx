@@ -72,7 +72,7 @@ export function MobileProjects() {
                                 allowFullScreen
                             />
                         ) : (
-                            <p className={styles.iframePlaceholder}></p>
+                            <img className={styles.iframe} src={selected.imageSrc}></img>
                         )}
                     </div>
                     <button className={styles.processButton}
