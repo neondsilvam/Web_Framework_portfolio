@@ -24,8 +24,8 @@ const translations: Record<Lang, Translations> = {
     },
     github: {
       sections: [
-        { id: '2025', label: '2025' },
         { id: '2026', label: '2026' },
+        { id: '2025', label: '2025' },
       ],
       aclaration: 'Estos han sido mis mejores proyectos usando React (Incluyendo esta página)',
       projects: [
@@ -35,8 +35,8 @@ const translations: Record<Lang, Translations> = {
     },
     webExp: {
       sections: [
-        { id: '2025', label: '2025' },
         { id: '2026', label: '2026' },
+        { id: '2025', label: '2025' },
       ],
       aclaration: 'Estos son mis proyectos para desarrollo móvil.',
       projects: [
@@ -82,8 +82,8 @@ const translations: Record<Lang, Translations> = {
     },
     github: {
       sections: [
-            { id: '2025', label: '2025' },
             { id: '2026', label: '2026' },
+            { id: '2025', label: '2025' },
         ],
         aclaration: 'These are my best Web projects. (Including this web page.)',
         projects: [

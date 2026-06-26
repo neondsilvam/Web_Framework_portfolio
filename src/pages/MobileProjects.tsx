@@ -61,7 +61,7 @@ export function MobileProjects() {
                         <h2 className={styles.detailTitle}>{selected.title}</h2>
                         <p className={styles.detailDesc}>{selected.description}</p>
                         {selected.hasExternalLinks ? (
-                            <a href={selected.externalLinks} target="_blank">{selected.externalLinks}</a>) : (<></>)}
+                            <a href={selected.externalLinks} target="_blank" className={styles.detailDesc}>{selected.externalLinks}</a>) : (<></>)}
                     </div>
                     <div className={styles.iframeWrapper}>
                         {selected.iframeSrc ? (
