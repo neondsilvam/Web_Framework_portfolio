@@ -55,8 +55,8 @@ const translations: Record<Lang, Translations> = {
         phoneCad: 'Teléfono',
         location: 'Ubicación',
         linkedin: 'LinkedIn',
-        MainGithub: 'Main GitHub Link (Projectos principales)',
-        SecondaryGithub: 'Secondary Github Link (Experimentos y exploracion)'
+        MainGithub: 'GitHub Principal (Projectos principales)',
+        SecondaryGithub: 'Github Secundarios (Experimentos y exploración)'
       },
     },
   },
