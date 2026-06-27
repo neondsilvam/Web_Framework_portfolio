@@ -120,6 +120,7 @@ export function MobileProjects() {
                                     </div>
                                 </div>
                                 <h5 className={styles.processSubtitle}>{selected.process.sectionFooter}</h5>
+                                {selected.process.footerHasLink ? (<a href={selected.process.footerLink} className={styles.processSubtitle}>{selected.process.footerLink}</a>) : (<></>)}
                             </div>
                         </div>
                     ) : (<></>)}

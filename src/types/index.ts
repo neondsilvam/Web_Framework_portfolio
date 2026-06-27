@@ -31,7 +31,9 @@ export interface Project {
         media: string []
       }
     }
-    sectionFooter: string
+    sectionFooter: string,
+    footerHasLink: boolean,
+    footerLink: string,
   }
 }
 

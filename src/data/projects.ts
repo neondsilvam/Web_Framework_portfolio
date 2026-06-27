@@ -34,6 +34,7 @@ import PostDes2 from '../assets/(Des)conectado/postdes2.png'
 import DesConectado from '../assets/(Des)conectado/(des)conectado.jpg'
 
 //TaskManagerApp
+import imgCocktail from '../assets/TaskManagerApp/taskManagerIMG.png'
 import preTaskManager from '../assets/TaskManagerApp/preprocess.png'
 import proTaskManager from '../assets/TaskManagerApp/process.png'
 import postTaskManager from '../assets/TaskManagerApp/postprocess.png'
@@ -91,6 +92,8 @@ export const WebProjectsES: Project[] = [
                 },
             },
             sectionFooter: "Todo el contenido web y visual es de creación propia, salvo que se indique lo contrario.",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -140,6 +143,8 @@ export const WebProjectsES: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -192,6 +197,8 @@ export const WebProjectsES: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
 ]
@@ -244,13 +251,15 @@ export const WebProjectsEN: Project[] = [
                 },
             },
             sectionFooter: "All web and visual content is original and self-authored, unless otherwise stated.",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
         id: 'p2',
         title: 'Web Project - Gaming Platform',
         description:
-            'This web application, developed in 2026 as a class project, was built using React as its foundation. ' +
+            'This web application, developed in 2026 as a class project, with the purpose of fully learning React framework.' +
             'It connects directly to a database through Google Firebase, which stores gameplay data and registers it on the leaderboard. ' +
             'It is also integrated with a Unity-based game, a recreation of the classic "Flappy Bird." ' +
             'The platform features Google authentication, metadata access via a Python script, and an admin panel managed through Firebase.',
@@ -293,6 +302,8 @@ export const WebProjectsEN: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -345,6 +356,8 @@ export const WebProjectsEN: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
 ]
@@ -406,6 +419,8 @@ export const MobileProjectsES: Project[] = [
                 },
             },
             sectionFooter: "Agradecimientos especiales a la Universidad de los Andes por la colaboración.",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -426,7 +441,7 @@ export const MobileProjectsES: Project[] = [
                 preproduction: {
                     title: "Concepto del proyecto",
                     description: [
-                        'Este era un proyecto de alcance acotado, al cual se le quiso dar una base sólida desde su desarrollo inicial.',
+                        'Este era un proyecto de alcance acotado, al cual consistia en expandir una base mas alla de su funcionamiento inicial.',
                         'Primero se definió el diseño, estableciendo que la aplicación requería una página de usuario, un menú principal con función de reciclaje de vistas, una plantilla para editar tareas y otra para visualizarlas.',
                         'Esto, sumado al aprendizaje de Kotlin y del entorno de desarrollo.'
                     ],
@@ -453,6 +468,8 @@ export const MobileProjectsES: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -461,9 +478,9 @@ export const MobileProjectsES: Project[] = [
         description:
             'Este es un proyecto desarrollado con React Native, que consiste en una aplicación web con acceso a una amplia variedad de cócteles para preparar, indicando los ingredientes, los pasos y el tiempo necesario para su elaboración. ' +
             'El proyecto se conecta con Firebase para verificar que los usuarios sean mayores de edad, accede a una API gratuita con información detallada de cada cóctel e incluso utiliza el acelerómetro del dispositivo para simular el proceso de mezcla de la bebida.',
-        isProjectDeployed: true,
-        iframeSrc: 'https://snack.expo.dev/@pg29julians/cocktail-app---final',
-        imageSrc: '',
+        isProjectDeployed: false,
+        iframeSrc: '',
+        imageSrc: imgCocktail,
         section: '2026',
         hasExternalLinks: true,
         externalLinks: "https://github.com/pg29JulianDSilva/Cocktail-app",
@@ -498,7 +515,9 @@ export const MobileProjectsES: Project[] = [
                     media: [postCocktail],
                 },
             },
-            sectionFooter: "",
+            sectionFooter:'Hay un prototipo de la app en el siguiente link:',
+            footerHasLink: true,
+            footerLink: 'https://snack.expo.dev/@pg29julians/cocktail-app---final',
         }
     },
 ]
@@ -560,6 +579,8 @@ export const MobileProjectsEN: Project[] = [
                 },
             },
             sectionFooter: "Special thanks to Universidad de los Andes for the collaboration.",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -567,7 +588,7 @@ export const MobileProjectsEN: Project[] = [
         title: 'Task Manager App',
         description: 'This is a smaller-scale project built with Android Studio. ' +
             'It replicates the logic of a task list application with storage in a Firebase database, which is user-responsive and allows tasks to be shared between different users. ' +
-            'The main purpose was educational, both in terms of Android Studio as a development environment and Kotlin as a programming language.',
+            'The main purpose was learning both, Android Studio as a development environment and Kotlin as a programming language.',
         isProjectDeployed: true,
         iframeSrc: 'https://www.youtube.com/embed/J2kiRcF9dIU?si=YJMyYrTy2aoj2F_t',
         imageSrc: '',
@@ -607,6 +628,8 @@ export const MobileProjectsEN: Project[] = [
                 },
             },
             sectionFooter: "",
+            footerHasLink: false,
+            footerLink: '',
         }
     },
     {
@@ -615,9 +638,9 @@ export const MobileProjectsEN: Project[] = [
         description:
             'This is a project developed with React Native, consisting of a web application that provides access to a wide variety of cocktails to prepare, including ingredients, preparation steps, and the time required for each. ' +
             'The project connects with Firebase to verify that users are of legal drinking age, accesses a free API with detailed information on each cocktail, and even uses the device\'s accelerometer to simulate the drink mixing process.',
-        isProjectDeployed: true,
-        iframeSrc: 'https://snack.expo.dev/@pg29julians/cocktail-app---final',
-        imageSrc: '',
+        isProjectDeployed: false,
+        iframeSrc: '',
+        imageSrc: imgCocktail,
         section: '2026',
         hasExternalLinks: true,
         externalLinks: "https://github.com/pg29JulianDSilva/Cocktail-app",
@@ -652,7 +675,9 @@ export const MobileProjectsEN: Project[] = [
                     media: [postCocktail],
                 },
             },
-            sectionFooter: "",
+            sectionFooter:'Also to test an early prototype on here:',
+            footerHasLink: true,
+            footerLink: 'https://snack.expo.dev/@pg29julians/cocktail-app---final',
         }
     },
 ]
