@@ -530,7 +530,8 @@ export const MobileProjectsEN: Project[] = [
         description:
             'This project was developed in collaboration with Universidad de los Andes. ' +
             'It presents the DEMO of an interactive graphic novel for Android mobile devices, centered on Ashley, a young woman with nomophobia who gets lost in a forest while her family goes camping and must find her way back. ' +
-            'This project represents my first professional approach to Unity and my formal entry into software development, as I had previously only completed minor exercises.',
+            'This project represents my first professional approach to Unity and my formal entry into software development, as I had previously only completed minor exercises.' +
+            '\n On the next link there is available the APK Demo to download from android. (The download is from google drive, so you need to use an android device that allow to install external apps.)',
         isProjectDeployed: false,
         iframeSrc: '',
         imageSrc: DesConectado,
