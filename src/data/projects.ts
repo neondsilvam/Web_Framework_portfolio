@@ -369,7 +369,8 @@ export const MobileProjectsES: Project[] = [
         description:
             'Este proyecto fue desarrollado en colaboración con la Universidad de los Andes. ' +
             'Presenta el DEMO de una novela gráfica interactiva para dispositivos móviles Android, centrada en Ashley, una joven con nomofobia que se pierde en un bosque mientras su familia acampa y debe encontrar el camino de regreso. ' +
-            'Este proyecto representa mi primer acercamiento profesional a Unity y mi inicio formal en el área de programación, ya que con anterioridad únicamente había realizado ejercicios menores.',
+            'Este proyecto representa mi primer acercamiento profesional a Unity y mi inicio formal en el área de programación, ya que con anterioridad únicamente había realizado ejercicios menores. \n' +
+            'Dentro del siguiente link se puede descagar el APK del DEMO para dispositivos android. (Toca dar permiso para instalar APK de Google Drive.)',
         isProjectDeployed: false,
         iframeSrc: '',
         imageSrc: DesConectado,
